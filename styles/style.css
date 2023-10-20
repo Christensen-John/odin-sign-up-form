@@ -17,6 +17,21 @@ body {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+p {
+	padding-right: 200px;
+}
+
+form {
+	background-color: #ffffff;
+	padding: 20px 40px;
+	padding-bottom: 40px;
+	margin-bottom: 30px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 40px;
+	row-gap: 15px;
+}
+
 div.banner-section {
 	display: flex;
 	flex-direction: column;
@@ -62,18 +77,23 @@ div.img-attribution {
 }
 
 div.main-content {
-	display: inline-block;
+	height: 100vh;
 	background-color: var(--main-background-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 div.main-content > div,
-div.main-content > p,
-div.main-content > form {
-	padding-left: 40px;
+div.main-content > p {
+	margin-left: 40px;
+	margin-bottom: 30px;
 }
 
 div.main-content > button {
 	margin-left: 40px;
+	margin-bottom: 30px;
+	width: 200px;
 }
 
 div.text-section {
@@ -83,6 +103,27 @@ div.text-section {
 	background-color: var(--main-background-color);
 }
 
-form {
-	background-color: #ffffff;
+div.text-section > p:first-child {
+	margin-bottom: 30px;
+}
+
+/* Form section */
+/* div.label-input {
+	margin: 30px;
+} */
+
+form > h2.form-heading {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+form > div {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+}
+
+label {
+	font-size: 0.85rem;
+	color: grey;
 }
