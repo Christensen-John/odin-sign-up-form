@@ -25,14 +25,19 @@ p {
 
 form {
 	background-color: #ffffff;
-	padding: 20px 0px 25px 0px;
+	padding: 20px 0px 15px 0px;
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: var(--mc-bottom-margin);
+	/* margin-bottom: var(--mc-bottom-margin); */
 	/* display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 40px;
 	row-gap: 15px; */
+}
+
+input {
+	width: 250px;
+	height: 1.3rem;
 }
 
 div.banner-section {
@@ -85,23 +90,31 @@ div.main-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	overflow: scroll;
 }
 
+div.main-content > * {
+	margin-bottom: var(--mc-bottom-margin);
+}
 div.main-content > div,
 div.main-content > p {
-	margin-left: 40px;
-	margin-bottom: var(--mc-bottom-margin);
+	margin-left: var(--mc-left-margin);
+	/* margin-bottom: var(--mc-bottom-margin); */
 }
 
 div.main-content > button {
-	margin-left: 40px;
+	margin-left: var(--mc-left-margin);
 	margin-bottom: var(--mc-bottom-margin);
 	width: 200px;
 	height: 2rem;
+	border-radius: 5px;
+	border-style: none;
+	background-color: #0d1626;
+	color: white;
 }
 
 div.text-section {
-	font-size: 20px;
+	font-size: 1.25rem;
 	color: #0c1625;
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 	background-color: var(--main-background-color);
@@ -129,10 +142,11 @@ form > * {
 form > div {
 	display: flex;
 	flex-direction: column;
-	width: 300px;
 }
 
 label {
 	font-size: 0.85rem;
 	color: grey;
 }
+
+/* INPUT PSEUDO ELEMENTS */
