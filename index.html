@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign on up!</title>
+		<link rel="stylesheet" href="./styles/style.css" />
+	</head>
+	<body>
+		<div class="banner-section">
+			<div class="banner-text-detail">
+				<img
+					src="./assets/Telescope free icon.png"
+					alt="A cute telescope illustration"
+					class="project-icon"
+				/>
+				<h2>ODIN</h2>
+			</div>
+			<div class="img-attribution">
+				Photo by
+				<a href="https://unsplash.com/@pic_nolte">Christoph Nolte</a> on
+				<a href="https://unsplash.com/">Unsplash</a>
+			</div>
+		</div>
+		<div class="main-content">
+			<div class="text-section">
+				<p>
+					This is not a real online service! You know you need something like
+					this in your life to help realize your deepest dreams. <br />
+					Sign up <em>now</em> to get started.
+				</p>
+				<p>You <em>know</em> you want to.</p>
+			</div>
+			<form action="/results.txt" method="get" id="account-info-form">
+				<h2 class="form-heading">Let's do this!</h2>
+				<div class="label-input">
+					<label class="label" for="first-name">First Name</label>
+					<input
+						type="text"
+						id="first-name"
+						name="first-name"
+						placeholder="First Name"
+						required
+					/>
+				</div>
+				<div class="label-input">
+					<label class="label" for="last-name">Last Name</label>
+					<input
+						type="text"
+						id="last-name"
+						name="last-name"
+						placeholder="Last Name"
+						required
+					/>
+				</div>
+				<div class="label-input">
+					<label class="label" for="email">Email</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Email"
+						required
+					/>
+				</div>
+				<div class="label-input">
+					<label class="label" for="Phone Number">Phone Number</label>
+					<input
+						type="tel"
+						id="phone-number"
+						name="phone-number"
+						placeholder="Phone Number"
+					/>
+				</div>
+				<div class="label-input">
+					<label class="label" for="password">Password</label>
+					<input
+						type="password"
+						id="password"
+						name="password"
+						class="pwd"
+						required
+					/>
+					<p id="password-warning"></p>
+				</div>
+				<div class="label-input">
+					<label class="label" for="password-confirmation"
+						>Confirm Password</label
+					>
+					<input
+						type="password"
+						id="password-confirmation"
+						name="password-confirmation"
+						class="pwd"
+						required
+					/>
+					<p id="password-warning"></p>
+				</div>
+			</form>
+			<button form="account-info-form" type="submit">Create Account</button>
+			<p id="user-redirect">
+				Already have an account? <a href="login.html">Log in</a>
+			</p>
+		</div>
+	</body>
+</html>
