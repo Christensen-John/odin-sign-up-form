@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Sign on up!</title>
 		<link rel="stylesheet" href="./styles/style.css" />
+		<script src="validationScripts.js" defer></script>
 	</head>
 	<body>
 		<div class="banner-section">
@@ -41,6 +42,7 @@
 						name="first-name"
 						placeholder="First Name"
 						required
+						autocomplete="given-name"
 					/>
 				</div>
 				<div class="label-input">
@@ -51,6 +53,7 @@
 						name="last-name"
 						placeholder="Last Name"
 						required
+						autocomplete="family-name"
 					/>
 				</div>
 				<div class="label-input">
@@ -61,10 +64,11 @@
 						name="email"
 						placeholder="Email"
 						required
+						autocomplete="email"
 					/>
 				</div>
 				<div class="label-input">
-					<label class="label" for="Phone Number">Phone Number</label>
+					<label class="label" for="phone-number">Phone Number</label>
 					<input
 						type="tel"
 						id="phone-number"
