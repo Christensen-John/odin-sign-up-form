@@ -154,3 +154,9 @@ input:focus {
 	/* border: 1px solid #0d1626; */
 	outline: 1px solid #0d1626;
 }
+
+/* PASSWORD WARNING ELEMENTS */
+.pwdMismatch {
+	border: 3px solid red;
+	box-shadow: red;
+}
